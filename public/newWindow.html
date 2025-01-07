@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script type="module" src="./newWindow.ts"></script> -->
+
+
+    <div id="content"></div>
+    <button id="open-window">Open Window</button>
+    <script>
+        'use strict';
+        let fontSize = 20;
+        let letterSpacing = 2;
+        let lineHeight = 26;
+        let marginTop = 30;
+        let marginBottom = 30;
+        let marginLeft = 30;
+        let marginRight = 30;
+
+        function onInit() {
+            const content = document.getElementById('content');
+            // 后续代码逻辑
+            // console.log(window)
+            console.log('newWindow.ts');
+            // 延时加载
+            setTimeout(() => {
+                initConfig();
+            }, 1000);
+        }
+
+        // 其他函数定义保持不变，去除类型标注等，如下面这样（仅示例initConfig函数）
+        async function initConfig() {
+            // 假设这里有获取配置的逻辑，暂时用一个模拟对象替代
+            const userConfig = {
+                fontSize: 15,
+                letterSpacing: 8,
+                lineHeight: 20,
+                marginTop: 20,
+                marginBottom: 20,
+                marginLeft: 20,
+                marginRight: 20,
+                fontColor: '#333',
+                backgroundColor: '#ccc'
+            };
+            fontSize = userConfig.fontSize || 10;
+            content.style.fontSize = fontSize + 'px';
+            letterSpacing = userConfig.letterSpacing || 10;
+            content.style.letterSpacing = letterSpacing + 'px';
+            lineHeight = userConfig.lineHeight || 10;
+            content.style.lineHeight = lineHeight + 'px';
+            marginTop = userConfig.marginTop || 10;
+            content.style.marginTop = marginTop + 'px';
+            marginBottom = userConfig.marginBottom || 10;
+            content.style.marginBottom = marginBottom + 'px';
+            marginLeft = userConfig.marginLeft || 10;
+            content.style.marginLeft = marginLeft + 'px';
+            marginRight = userConfig.marginRight || 10;
+            content.style.marginRight = marginRight + 'px';
+            content.style.color = userConfig.fontColor || '#ffffff';
+            document.body.style.backgroundColor = userConfig.backgroundColor || '#000000';
+        }
+
+        // 其他函数定义类似，去除类型标注后保持代码逻辑
+        window.addEventListener('storage', function (event) {
+            // 事件处理逻辑
+        });
+
+        onInit();
+    </script>
+</body>
+
+</html>

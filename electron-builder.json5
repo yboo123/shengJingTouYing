@@ -1,0 +1,37 @@
+{
+    "productName": "touYing",
+    "appId": "com.dengruicode.www",
+    "win": {
+        "icon": "electron/resource/images/code.ico",
+        "target": [
+            {
+                "target": "nsis",
+                "arch": [
+                    "x64"
+                ]
+            }
+        ]
+    },
+    "nsis": {
+        "oneClick": false,
+        "perMachine": true,
+        "allowToChangeInstallationDirectory": true
+    },
+    "files": [
+        "dist",
+        "dist-electron",
+        // "public/*.html"
+    ],
+    "directories": {
+        "output": "build"
+    },
+    "extraFiles": [
+        {
+            "from": "public/userConfig.json",
+            "to": "."
+        },        {
+            "from": "public/bj.png",
+            "to": "."
+        }
+    ]
+}

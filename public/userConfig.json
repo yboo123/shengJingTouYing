@@ -1,0 +1,11 @@
+{
+    "fontSize": "55",
+    "letterSpacing": "10",
+    "lineHeight": "70",
+    "marginTop": "90",
+    "marginBottom": 100,
+    "marginLeft": "75",
+    "marginRight": "40",
+    "fontColor": "#ffeb3c",
+    "backgroundColor": "#123b63"
+}
