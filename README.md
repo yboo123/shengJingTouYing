@@ -26,5 +26,7 @@
 
 2、安装包下载地址：[点这里](https://github.com/yboo123/shengJingTouYing/blob/main/build/touYing%20Setup%200.0.0.exe)
 
+3、进入后点击这里进行下载：![下载](/src/download.png)
+
 
 
