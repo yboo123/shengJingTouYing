@@ -22,7 +22,8 @@
 3、圣经数据来源：https://github.com/ElijahLabs/bible
 
 # 下载和安装
-1、目前仅支持windows系统，Mac和Linux用户请自行编译。无需要其他任何依赖。
+1、目前仅支持windows系统，Mac和Linux用户请自行编译。无需要其他任何依赖。  
+
 2、安装包下载地址：[点这里](https://github.com/yboo123/shengJingTouYing/blob/main/build/touYing%20Setup%200.0.0.exe)
 
 
